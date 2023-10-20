@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.pesquisar{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#pesquisaFilme{
+    padding: 10px;
+    width: 500px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.container{
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.filme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid blue;
+    width: 400px;
+    gap: 40px;
+    margin-top: 4rem;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.titulo{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+
+.btn{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 32px;
+    background-color: rgb(0, 213, 255);
+    color: #fff;
+    font-weight: bolder;
+}
+
+.btn:hover{
+   background-color:  rgba(0, 213, 255, 0.658);
+}
+
+.vote{
+    color: #fff;
+    font-size: 35px;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+.estrela{
+    width: 80px;
+    height: 80px;
+}
