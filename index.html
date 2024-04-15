@@ -29,16 +29,31 @@
     <div class="container"></div>
 
     <script defer>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 3,
-          spaceBetween: 10,
-          freeMode: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+      var swiper = new Swiper(".mySwiper", {
+        // Configurações padrão
+       // slidesPerView: 3,
+        spaceBetween: 5,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // Adicionando breakpoints para ajustar o número de slides visíveis
+        breakpoints: {
+          // Quando a largura da tela for menor que 768px, mostre apenas 1 slide
+          768: {
+            slidesPerView: 1,
           },
-        });
+          // Quando a largura da tela for menor que 1024px, mostre apenas 2 slides
+          1024: {
+            slidesPerView: 2,
+          },
+          1600: {
+            slidesPerView: 3,
+          },
+        },
+      });
       </script>
-    </script>
+    <footer id="footer"><p>Desenvolvido por Jefferson Lira 2024</p></footer>
 </body>
 </html>
