@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  y
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.7.5/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@6.7.5/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="pesquisar">
-        <input type="text" id="pesquisaFilme" placeholder="Digite o nome do filme">
+  
+    <div>
+        <h1 class="title">Filmes Populares</h1>
     </div>
-        <div class="container">
-                <div class="filme">
-                    <div class="titulo">
-                        <h1>TITULO</h1>
-                    </div>
-                    <div class="image">
-                    </div>
-                   
-                    <div class="vote"></div>
-                </div>
-        </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-slide"></div>  
+    </div>
+    <div class="swiper-pagination" id="pagination"></div>
+    <div>
+        <h1 class="title" id="idTitulo">Filmes em Cartaz</h1>
+    </div>
+    <div class="pesquisar">
+      <input type="text" id="pesquisaFilme" placeholder="Digite o nome do filme">
+  </div>
+    <div class="container"></div>
+
+    <script defer>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 10,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+    </script>
 </body>
 </html>
